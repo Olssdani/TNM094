@@ -1,5 +1,12 @@
 \begin{thebibliography}{1}
 
+\bibitem{Fowler2000rit}
+Fowler M, Beck K, Erich G.
+\newblock Refactoring : improving the design of existing code.
+\newblock Boston: Addison-Wesley; 2000.
+\newblock Available from:
+  \url{https://www.csie.ntu.edu.tw/~r95004/Refactoring_improving_the_design_of_existing_code.pdf}.
+
 \bibitem{Design}
 Gamma E.
 \newblock Design patterns : elements of reusable object-oriented software.

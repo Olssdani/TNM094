@@ -35,3 +35,4 @@
 \contentsline {chapter}{Litteraturf\IeC {\"o}rteckning}{12}{chapter*.5}
 \contentsline {chapter}{\numberline {A}Kravspecifikation}{13}{appendix.A}
 \contentsline {chapter}{\numberline {B}Protokoll mall}{14}{appendix.B}
+\contentsline {chapter}{\numberline {C}Ordlista}{15}{appendix.C}

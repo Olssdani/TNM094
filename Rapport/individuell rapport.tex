@@ -88,31 +88,24 @@ ett beskriver analys och slutsatser. Sammanfattningen innehåller inga referense
 Processen för att utveckla ett system är ofta komplex och lång. Det finns därför många olika metodiker som utvecklare kan jobba enligt för att få processen att bli mer överblickbar, redundant och anpassningsbar. 
 
 \section{Bakgrund}
-Olika arbetsprocesser lämpar sig för olika sorters av projekt och det är därför viktigt att analysera varje projekt var för sig för att se vad som lämpar sig bäst. En fel metodutveckling kan få ödesdigra effekter i form av overhead och kanske till och med ett nedlagt projekt.
+Olika arbetsprocesser lämpar sig för olika sorters av projekt och det är därför viktigt att analysera varje projekt var för sig för att se vad som lämpar sig bäst. En arbetsprocess som inte lämpar sig för ett projekt kan få ödesdigra effekter i form av overhead\footnote{Overhead - Tid som går åt till administrativa uppgifter eller andra indirekta kostnader.} och kanske till och med ett nedlagt projekt.
+
+Förutom arbetsprocessen så är systemets arkitektur viktigt för hur effektivt ett system är och hur lätt det är att underhålla det efter flera år. 
 \section{Syfte}
 
-Syftet med detta arbete är att analysera och rekommendera en passande utveckling plan för ett projekt. Detta innebär att ge förslag på utvecklingsmetodik, systemartitektur och projekthantering. Planen är en rekommendation och kan ändras under projektets gång.
+Syftet med detta arbete är att analysera och rekommendera en passande utveckling plan för ett projekt. Detta innebär att ge förslag på utvecklingsmetodik, systemarkitektur och projekthantering. Planen är en rekommendation och kan ändras under projektets gång om planen inte fungerar eller om ett bättre plan uppstår. 
 
-Projektet innebär att slutprodukten skall vara ett spel där flera externa knappar och spakar används för att styra och kontroller olika aspekter av spelmiljön.  
+Projektet innebär att slutprodukten skall vara ett spel där flera externa knappar och spakar används för att styra och kontroller olika aspekter av spelmiljön. Detta är för att öka integration mellan barn i en fysisk miljö. Spelet kommer gå ut på att ta sig från punkt A till punkt B med hjälp av olika spakar och knappar som förändrar miljön som möjliggör en passage för spelarobjektet. 
 
 
 \section{Frågeställning}
-För att kunna analysera vilken arbetsprocess som passar utvecklingsteamet bäst måste det definieras vad det är som eftersträvas med en vis arbetsprocess. Det som eftersträvas är minskad tidsåtgång och högre kvalitet på slutprodukten och detta kan formuleras med följande frågeställningar: 
+För att kunna analysera vilken arbetsprocess som passar utvecklingsteamet bäst måste det definieras vad som är önskvärt. Det som eftersträvas är minskad tidsåtgång, högre kvalitet och att all funktionalitet på slutprodukten fungerar. Detta kan formuleras med följande frågeställning: 
 \begin{itemize}
 	\item Vilken utvecklingsmetodik ger minst overhead?
-	\item  Går de att sammankoppla de fysiska reglagen med en spelmotor? Dvs vilka redskap och anslutningar behövs det för att få en signal från ett externt input till en spelmotor där den kan behandlas
+	\item Finns det en spelmotor som kan sammankopplas med externa knappar och spakar?
+	\item Vilka skäl finns det att utnyttja refaktorering\footnote{Refaktorering - Förbättra redan skriven kod så att funktionaliteten är samma fast koden fungerar bättre\cite{Fowler2000rit}.} istället för planering?
 
 \end{itemize}
-
-\textcolor{red}{Observera att en specifik frågeställning nästan alltid ger ett bättre arbete än en generell frågeställning
-(det är helt enkelt mycket svårare att göra något vettigt av en generell frågeställning). Det är också
-fördelaktigt att inte bara skriva frågan, utan förtydliga i ett par meningar vad som menas med frågan
-och hur den kan besvaras.
-Det bästa sättet att få till en riktigt bra och specifik frågeställning är att göra en noggrann teorigenomgång
-och sätta sig in i relaterad forskning och praktik. Då får man idéer och terminologi på köpet}
-
-
-
 
 
 \section{Avgränsningar}
@@ -120,28 +113,27 @@ Inga avgränsningar har gjort för detta arbetet.
 
 
 \chapter{System och tekniska lösningar}
-I detta kapitel diskuteras tekniska lösningar för projektet och eventuella tredjepart programvara.
+I detta kapitel diskuteras tekniska lösningar för projektet och tredjepart programvara.
 
 \section{Grundläggande, initiala krav och systembegränsningar}
-Slutprodukten skall vara ett spel som skall vara lärande för barn men samtidigt kul och utmanande. Spelet skall stå i en utställning på visualations center i Norrköping och detta ställer en del krav på systemet. I samarbete med kunden tog en kravlista fram över slutprodukten vilket kan ses i sitt fullo i appendix \ref{Kravspecifikation}. De viktigaste punkterna kan ses nedan.
+Slutprodukten skall vara ett spel som skall vara lärande för barn men samtidigt kul och utmanande. Spelet skall stå i en utställning på visualations center i Norrköping och detta ställer en del krav på systemet. I samarbete med kunden tog en kravlista fram över slutprodukten vilket kan ses i sitt fullo i appendix \ref{Kravspecifikation}. De viktigaste punkterna som definerar slutprodukten kan ses nedan.
 
 Slutprodukten skall:
 \begin{itemize}
 	\item minst använda sig av 3 externa knappar och 1 extern spak.
-	\item vara spelbar för användare från 6 år.
-	\item kräva minst 2 spelare.
-	\item innehava ett tema om rymden eller programmering.
-	\item vara lättmonterad.
-
+	\item kunna brukas av en sexåring.
+	\item kräva minst två spelare för att vara spelbart.
+	\item ha rymd eller programmeringstema.
+	\item gå att montera för en normalteknisk person på ca 2h.
 \end{itemize}
 
-Inga övre krav på användare finns då detta begränsas av antalet knappar som kommer implementeras vilket kan ändras under projektes gång. 
+Visa av kraven ställer ett undre krav men inget övre krav och detta är för att ge utvecklingsteamet lite friheter för implementationen samt möjligheten för skalning av slutprodukten.
 
 \section{Målplattform}
 
-Projektet utvecklas för Windows 10 och ingen vikt kommer ges till att få spelet att bli bakåt kompatibelt. Detta är för att spelet är en del av en utställning och kommer därmed levereras med tillhörande hårdvara inklusive dator. 
+Projektet utvecklas för Windows 10 och ingen vikt kommer ges till att få slutprodukten att bli bakåt kompatibelt. Detta är för att slutprodukten är en del av en utställning och kommer därmed levereras med tillhörande hårdvara inklusive dator. 
 
-Utvecklingsteamet kommer använda sig av en extern spelmotor. Detta är på grund av projektets storlek inte gör det hållbart att utveckla en spelmotor och utvecklingsteamet har inga framtida planer på spel så kostnaden för utvecklingen av en extern spelmotor kan inte delas på flera projekt. De spelmotorer som är intressanta är:
+Utvecklingsteamet kommer använda sig av en extern spelmotor. Detta är på grund av projektets storlek inte gör det hållbart att utveckla en spelmotor och utvecklingsteamet har inga framtida planer på fler spel så kostnaden för utvecklingen av en extern spelmotor kan inte delas på flera projekt. De spelmotorer som är intressanta är:
   
 \begin{itemize}
 	\item Unreal Engine 4
@@ -149,7 +141,7 @@ Utvecklingsteamet kommer använda sig av en extern spelmotor. Detta är på grun
 
 \end{itemize}
 
- Valet mellan spelmotorerna grundar sig i en fundamental grundpelare som måste uppfyllas vilket är att motorn kan hantera externa input från hårdvara. Då båda motorerna klarar detta så valdes Unity3D då dess inlärningskurva är mycket bättre. 
+ Valet mellan spelmotorerna grundar sig i en fundamental grundpelare som måste uppfyllas vilket är att motorn kan hantera externa input från hårdvara. Då båda motorerna klarar detta så valdes Unity3D då dess inlärningskurva är mycket bättre och det genererar en snabbare start i projektet.
 
 \section{Grundläggande system-arkitektur}
 Systemet som skall utvecklas kan grovt delas in i 3 delar:
@@ -158,13 +150,13 @@ Systemet som skall utvecklas kan grovt delas in i 3 delar:
 	\item Inmatning
 	\item Spellogik
 \end{itemize}
+Visualerings objektet är allt som generar en bild på skärmen, inmatnings objektet hanterar inputs från användaren och spellogiks objektet bestämmer om inmatningen skall hanteras eller kastas. 
+
 Flödet som sker mellan dessa är sker alltid framåt. Visualisering ger data till användaren som ger nya kommandon via inmatningen som sedan behandlas av spellogiken och därefter uppdaterar visualiseringen. Detta system liknar strukturen för modell view controller(MVC)\cite{Design} och det är den strukturen som används för detta system på den högsta nivån. 
-
-
 
 \begin{figure}[h]
 	\includegraphics[width=0.5\textwidth, center]{System.jpg}
-	\caption{Systemet tre stora objekt som samarbetar}
+	\caption{Systemets tre objekt och deras relationer till varandra}
 	\label{fig:System}
 \end{figure}
 
@@ -355,7 +347,7 @@ presenteras, snarare än vaga idéer}
 		\hline
 		Krav nr 8 & Systemet skall öka svårighetsgrader så att det är svårt att bemästra systemet. \\ 
 		\hline
-		Krav nr 9 & Systemets skall ha rymdtema eller programmeringstema. \\ 
+		Krav nr 9 & Systemets skall ha rymd eller programmeringstema. \\ 
 		\hline
 		Krav nr 10& Systemet får inte manipulera projektionsvägen. \\ 
 		\hline
@@ -373,4 +365,8 @@ presenteras, snarare än vaga idéer}
 
 \chapter{Protokoll mall}\label{protokoll}
 
+\chapter{Ordlista}\label{Ordlista}
+\begin{itemize}
+	\item Overhead - Tid som går åt till administrativa uppgifter. 
+\end{itemize}
 \end{document}
