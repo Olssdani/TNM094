@@ -26,7 +26,7 @@
 \contentsline {section}{\numberline {4.5}Dokumentationsprinciper och rutiner}{8}{section.4.5}
 \contentsline {subsection}{\numberline {4.5.1}Programkod}{8}{subsection.4.5.1}
 \contentsline {subsection}{\numberline {4.5.2}M\IeC {\"o}ten}{8}{subsection.4.5.2}
-\contentsline {subsection}{\numberline {4.5.3}Slutproduktion}{8}{subsection.4.5.3}
+\contentsline {subsection}{\numberline {4.5.3}Slutproduktion}{9}{subsection.4.5.3}
 \contentsline {section}{\numberline {4.6}Kvalitetss\IeC {\"a}kring}{9}{section.4.6}
 \contentsline {chapter}{\numberline {5}Analys och diskussion}{10}{chapter.5}
 \contentsline {section}{\numberline {5.1}Resultat}{10}{section.5.1}
