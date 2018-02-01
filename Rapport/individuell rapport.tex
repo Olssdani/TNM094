@@ -8,7 +8,7 @@
 \usepackage[export]{adjustbox}
 \usepackage{geometry}
 \usepackage{array}
-
+\usepackage{tabularx}
 \geometry{
  margin=20mm
 } 
@@ -22,7 +22,7 @@
 \frenchspacing
 \setlength{\parindent}{0pt}
 \parskip 5pt
-
+\usepackage{lscape}
 \usepackage{color}
 \definecolor{rltred}{rgb}{.5,0,0}
 \definecolor{rltgreen}{rgb}{0,.5,0}
@@ -165,28 +165,43 @@ Fördelar med denna struktur är att det är enklare att hitta fel i systemet oc
 Visualiserings och spellogik objekten byggs upp i Unity3D och skrivs i C-sharp. Inmatnings objekten kommer handskas både i Untiy3D och en arduino. På arduinon skrivs koden i C och kommer endast hantera de externa kontrollernas  
 
 \section{Standarder}
-
-
-
-\textcolor{red}{Här beskrivs de standarder som systemet behöver följa, såsom filformat, protokoll eller andra gränssnitt.
-Beskriv också vilka tredjeparts-APIer som kommer att användas för att göra detta.}
+Det finns inga speciella standarder som behövs följas.
 
 \section{Utvecklings-miljö}
 
-I projektets utvecklingsfas kommer flera olika verktyg användas för att bygga och hantera slutprodukten.
 
-Unity3D kommer användas för spelprogrammeringen och som leveleditor. Det är från Unity3D som spelet kommer kopileras från.
 
-3DSmax kommer användas till modellering av alla spelmodeller.
+I projektets utvecklingsfas kommer flera olika verktyg användas för att bygga och hantera slutprodukten. Dessa verktyg och dess användingsområde är samlade i tabell \ref{utvecklingsmiljö}. 
 
-Photoshop kommer användas till tillverkning av texturer.
 
-Arduino Software kommer användas till programmeringen av Arduino.
+\begin{table}[h]
+	\centering
+	\caption{All programvara som används för att utveckla systemet}
+	\label{utvecklingsmiljö}
+	\begin{tabular}{ | p{9em} | m{6em} |p{23em}| } 
+		\hline
+		\textbf{Programtyp}&\textbf{Programnamn}  &\textbf{ Användningsområde} \\ 
+		\hline
+		Spelmotor &Unity3D & Använd som grafikmotor och nivåskapare. \\ 
+		\hline
+		3D Modellering &3DS Max &Används till att skapa alla 3D modeller  \\ 
+		\hline
+		Bildbehandlings-program &3DS Max &Används till att skapa texturer  \\ 
+		\hline
+		Utvecklingsmiljö &Arduino Software &Används som utvecklingsmiljö när program skrivs till Arduinon  \\ 
+		\hline
+		Versionshantering &Git &Används till att hålla koll på tidigare versioner och underlätta samkodning  \\ 
+		\hline
 
-Git kommer användas till versionshantering
+	\end{tabular}
+\end{table}
+
+	
+
 
 
 \chapter{Projekthantering}
+
 
 \textcolor{red}{Här beskrivs de övergripande teknikerna som övervakar och styr samarbetet inom projektet.}
 
