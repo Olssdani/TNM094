@@ -116,7 +116,7 @@ Inga avgränsningar har gjort för detta arbetet.
 I detta kapitel diskuteras tekniska lösningar för projektet och tredjepart programvara.
 
 \section{Grundläggande, initiala krav och systembegränsningar}
-Slutprodukten skall vara ett spel som skall vara lärande för barn men samtidigt kul och utmanande. Spelet skall stå i en utställning på visualations center i Norrköping och detta ställer en del krav på systemet. I samarbete med kunden tog en kravlista fram över slutprodukten vilket kan ses i sitt fullo i appendix \ref{Kravspecifikation}. De viktigaste punkterna som definerar slutprodukten kan ses nedan.
+Slutprodukten skall vara ett spel som skall vara lärande för barn men samtidigt kul och utmanande. Spelet skall stå i en utställning på visualations center i Norrköping och detta ställer en del krav på systemet. I samarbete med kunden tog en kravlista fram över slutprodukten vilket kan ses i sitt fullo i bilaga \ref{Kravspecifikation}. De viktigaste punkterna som definerar slutprodukten kan ses nedan.
 
 Slutprodukten skall:
 \begin{itemize}
@@ -192,6 +192,8 @@ I projektets utvecklingsfas kommer flera olika verktyg användas för att bygga 
 		\hline
 		Versionshantering &Git &Används till att hålla koll på tidigare versioner och underlätta samkodning  \\ 
 		\hline
+		Projekthantering &Hack n plan &Används till att hantera projektets olika delar och moment.  \\ 
+		\hline
 
 	\end{tabular}
 \end{table}
@@ -202,10 +204,27 @@ I projektets utvecklingsfas kommer flera olika verktyg användas för att bygga 
 
 \chapter{Projekthantering}
 
-
-\textcolor{red}{Här beskrivs de övergripande teknikerna som övervakar och styr samarbetet inom projektet.}
+Olika projekthanteringsmetoder ger olika fördelar och nackdelar.
 
 \section{Utvecklingsmetodik}
+Från kravspecifikationen som ses i bilaga \ref{Kravspecifikation} kan det ses att kunden inte har satt speciellt hårda krav på vad som slutprodukten skall innehålla vilket genererar att utvecklingsteamet har stor möjlighet att påverka vad innehållet kommer vara. Då bra idéer kan uppstå när som så är det bra och ha en utvecklingsmetodik som är flexibel. Därför har agil utveckling valts till detta projekt.
+
+\subsection{Agil utveckling}
+Agil utveckling kallas ofta för lättrörliga metoder eller iterativa metoder och menas att varje projekt bryts ner i mindre delar som kan utvecklas var för sig. Detta gör att det alltid finns fungerande programvara efter varje iteration. Inom agil utveckling följer man 4 st riktlinjer\cite{Sewell2012asd}:
+
+\begin{itemize}
+	\item Värderar individer och interaktion över processer och verktyg.
+	\item Värderar fungerande programvara över omfattande dokumentation.
+	\item Värderar kundsamarbeten över kontraktsförhandlingar.
+	\item Värderar att svara på förändring över att följa en plan.
+\end{itemize}
+Detta kan sammanfattas med att agil utveckling är värdedrivande, dvs att utvecklingsteamet skall prioritera det som ger värde till slutprodukten.
+
+
+En teknik som förespråkas inom agil utveckling är par programmering\cite{Sewell2012asd}. Par programmering går ut på att två programmerare sitter tillsammans och skriver kod. Den som skriver kallas föraren och den andra programmeraren kallas navigatören. Under tiden föraren skriver kod så granskar navigatören och pekar ut fel och ger råd till föraren. Detta generarar att fel kan upptäckas tidigt i processen och att koden blir mer läsbar direkt. Par programmering kommer att användas vid de viktigaste processerna så som koden för att kontrollera de externa kontrollerna. 
+
+
+\subsection{Scrum}
 
 \textcolor{red}{Beskriv och motivera här den övergripande strukturen, utvecklingsmetodiken eller metodikerna, som
 	valts för projektet. Här ska bara grundläggande principer och motivering diskuteras. Detaljer diskuteras
@@ -214,9 +233,31 @@ I projektets utvecklingsfas kommer flera olika verktyg användas för att bygga 
 
 \section{Organisation}
 
-\textcolor{red}{Här beskrivs vilka som ingår i projektet, både utvecklare och externa intressenter, deras ansvarsfördelning
-	(och eventuellt hur den är planerad att förändras över tid) och eventuella arbetsgrupper och
-	vilka syften och uppgifter dessa har.}
+
+Detta projekt har tillgång till 20st utvecklare under 12 månaders tid för att färdigställa slutprodukten enligt kravspecifikationen i bilaga \ref{Kravspecifikation}. Förutom dessa 20st utvecklare så finns även en projektansvarig som är överst ansvarig för alla utvecklarna. 
+
+Dessa 20st utvecklare är indelade i 4 grupper med olika arbetsuppgifter. Uppdelningen kan ses i tabell \ref{Utvecklare}.
+\begin{table}[h]
+	\centering
+	\caption{Fördelningen mellan utvecklare i projektet och dess arbetsuppgifter}
+	\label{Utvecklare}
+	\begin{tabular}{ | p{10em} | m{3em} |p{23em}| } 
+		\hline
+		\textbf{Utvecklingsområde}&\textbf{Antal}  &\textbf{ Förklaring} \\ 
+		\hline
+		Spellogik &8st & Ansvarar för att all spellogik finns och att de externa kontrollerna fungerar med spelet. \\ 
+		\hline
+		Modellering och nivåeditering &6st & Ansvarar för att skapa alla 3D modeller och texturer till spelet. Sätter även ihop alla nivåer.  \\ 
+		\hline
+		Ljud &3st & Ansvarar för alla   \\ 
+		\hline
+		Manus &3st &Ansvarar för att skapa manus.   \\ 
+		\hline	
+	\end{tabular}
+\end{table}
+
+
+Projektansvariga roll är att se till att alla utvecklare samarbetar och ligger i fas med varandra samt hålla möten med kunden och fördela krav vidare till arbetsgrupperna.
 
 \section{Tidsplan}
 

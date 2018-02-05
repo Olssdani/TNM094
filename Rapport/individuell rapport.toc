@@ -15,24 +15,26 @@
 \contentsline {section}{\numberline {2.5}Utvecklings-milj\IeC {\"o}}{5}{section.2.5}
 \contentsline {chapter}{\numberline {3}Projekthantering}{6}{chapter.3}
 \contentsline {section}{\numberline {3.1}Utvecklingsmetodik}{6}{section.3.1}
-\contentsline {section}{\numberline {3.2}Organisation}{6}{section.3.2}
-\contentsline {section}{\numberline {3.3}Tidsplan}{6}{section.3.3}
-\contentsline {section}{\numberline {3.4}Milestones och leverabler}{6}{section.3.4}
-\contentsline {chapter}{\numberline {4}Rutiner och principer}{7}{chapter.4}
-\contentsline {section}{\numberline {4.1}M\IeC {\"o}tesprinciper och rutiner}{7}{section.4.1}
-\contentsline {section}{\numberline {4.2}Kravhantering och -s\IeC {\r a}rning}{7}{section.4.2}
-\contentsline {section}{\numberline {4.3}Versionshantering, -system och rutiner}{7}{section.4.3}
-\contentsline {section}{\numberline {4.4}Arkitektur- och programdesign, standarder och rutiner}{8}{section.4.4}
-\contentsline {section}{\numberline {4.5}Dokumentationsprinciper och rutiner}{8}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Programkod}{8}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}M\IeC {\"o}ten}{8}{subsection.4.5.2}
-\contentsline {subsection}{\numberline {4.5.3}Slutproduktion}{9}{subsection.4.5.3}
-\contentsline {section}{\numberline {4.6}Kvalitetss\IeC {\"a}kring}{9}{section.4.6}
-\contentsline {chapter}{\numberline {5}Analys och diskussion}{10}{chapter.5}
-\contentsline {section}{\numberline {5.1}Resultat}{10}{section.5.1}
-\contentsline {section}{\numberline {5.2}Arbetet i ett vidare sammanhang}{10}{section.5.2}
-\contentsline {chapter}{\numberline {6}Slutsatser}{11}{chapter.6}
-\contentsline {chapter}{Litteraturf\IeC {\"o}rteckning}{12}{chapter*.5}
-\contentsline {chapter}{\numberline {A}Kravspecifikation}{13}{appendix.A}
-\contentsline {chapter}{\numberline {B}Protokoll mall}{14}{appendix.B}
-\contentsline {chapter}{\numberline {C}Ordlista}{15}{appendix.C}
+\contentsline {subsection}{\numberline {3.1.1}Agil utveckling}{6}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Scrum}{7}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Organisation}{7}{section.3.2}
+\contentsline {section}{\numberline {3.3}Tidsplan}{7}{section.3.3}
+\contentsline {section}{\numberline {3.4}Milestones och leverabler}{7}{section.3.4}
+\contentsline {chapter}{\numberline {4}Rutiner och principer}{8}{chapter.4}
+\contentsline {section}{\numberline {4.1}M\IeC {\"o}tesprinciper och rutiner}{8}{section.4.1}
+\contentsline {section}{\numberline {4.2}Kravhantering och -s\IeC {\r a}rning}{8}{section.4.2}
+\contentsline {section}{\numberline {4.3}Versionshantering, -system och rutiner}{8}{section.4.3}
+\contentsline {section}{\numberline {4.4}Arkitektur- och programdesign, standarder och rutiner}{9}{section.4.4}
+\contentsline {section}{\numberline {4.5}Dokumentationsprinciper och rutiner}{9}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Programkod}{9}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}M\IeC {\"o}ten}{9}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Slutproduktion}{10}{subsection.4.5.3}
+\contentsline {section}{\numberline {4.6}Kvalitetss\IeC {\"a}kring}{10}{section.4.6}
+\contentsline {chapter}{\numberline {5}Analys och diskussion}{11}{chapter.5}
+\contentsline {section}{\numberline {5.1}Resultat}{11}{section.5.1}
+\contentsline {section}{\numberline {5.2}Arbetet i ett vidare sammanhang}{11}{section.5.2}
+\contentsline {chapter}{\numberline {6}Slutsatser}{12}{chapter.6}
+\contentsline {chapter}{Litteraturf\IeC {\"o}rteckning}{13}{chapter*.5}
+\contentsline {chapter}{\numberline {A}Kravspecifikation}{14}{appendix.A}
+\contentsline {chapter}{\numberline {B}Protokoll mall}{15}{appendix.B}
+\contentsline {chapter}{\numberline {C}Ordlista}{16}{appendix.C}
