@@ -89,7 +89,7 @@ ett beskriver analys och slutsatser. Sammanfattningen innehåller inga referense
 För att utveckla ett större projekt krävs bra rutiner, principer och ledarskap, då alla projekt inte är identiska krävs en noggrann analys för att definiera dessa.
 
 \section{Bakgrund}
- Processen för att utveckla ett system är ofta komplex och lång. Det finns därför många olika metodiker som utvecklare kan jobba enligt för att få processen att bli mer överblickbar, redundant och anpassningsbar. Då varje projekt inte är likt ett annat så fungerar det inte att gå efter en färdig metodik utan utvecklingsmetodiken måste skräddarsys till varje projekt. Därför behövs varje aspekt i ett projekt analyseras för att se vad som passar bäst. En arbetsprocess som inte lämpar sig för ett projekt kan få ödesdigra effekter i form av overhead\footnote{Overhead - Tid som går åt till administrativa uppgifter eller andra indirekta kostnader.} och kanske till med ett nedlagt projekt.
+ Processen för att utveckla ett system är ofta komplex och lång. Det finns därför många olika metodiker som utvecklare kan jobba enligt. En bra metodik genererar att processen blir mer överblickbar, redundant och anpassningsbar. Då varje projekt inte är likt ett annat så går det inte alltid att följa en specifik metodik och därför behövs varje aspekt i ett projekt analyseras för att se vad som passar bäst. En arbetsprocess som inte lämpar sig för ett projekt kan få ödesdigra effekter i form av overhead\footnote{Overhead - Tid som går åt till administrativa uppgifter eller andra indirekta kostnader.} och kan till och med resultera i ett nedlagt projekt.
 
 Förutom arbetsprocessen så är systemets arkitektur och kodens struktur viktig för hur effektivt ett system är och hur lätt det är att underhålla det efter flera år. Skall ett system ha lång livslängd krävs det bra en bra struktur som gör det enkelt att sätta sig in i produkten utan att ha varit med och utvecklat den.
 \section{Syfte}
@@ -316,10 +316,15 @@ Det faller mycket ansvar på produktägaren att se och bryta upp deadlines i pos
 
 
 \section{Milestones och leverabler}
-
-\textcolor{red}{Mer detaljerad beskrivning och motivering av milestones och leverabler, såsom rapporter, prototyper
-och färdigt system.
-}
+ Från tabell \ref{fig:tidsplan} ses det flera olika deadlines. De viktigaste är testnivå, halvtidsrapport, systemfärdigt för testning, och manualer.
+ 
+ Testnivå deadlinen innebär det finns en spelbart spel som alla utvecklare kan testa sina funktioner mot. Finns inte denna så finns det ingen möjlighet att göra integrationstest andra delar i systemet.
+ 
+ Halvtidsrapporten skall innehålla information om vilken funktionalitet som är klar och inte skall arbeta vidare med och vilka funktioner som är implementerade men fortfarande kan fortsättas att jobba med när det finns slack\footnote{Slack- Inplanerad tid för missberäkningar och andra oförutsägbara händelser.}. Detta är för att kunden och produktägaren skall kunna analysera och se om vilka poster som är viktigast att fortsätta arbeta med.
+ 
+ Att systemet skall vara färdigt för testning betyder att systemet skall gå in i beta testning\footnote{Beta testning - När programvara blir testat av utvalda användare utanför utvecklingteamet.}. Systemet kommer inte utvecklas med ny funktionallitet utan utvecklarna kommer rätta till buggar som har hittats under testningen. 
+ 
+ I slutet på projektet skall alla manualer och annat dokumentation vara färdig. Detta kan involvera installationsmanual, kod dokumentation och rapport över systemet.
 
 
 \chapter{Rutiner och principer}
@@ -433,10 +438,15 @@ Det fanns många skäl till att använda refaktorering istället för planering.
 
 \appendix
 
+
 \chapter{Kravspecifikation}\label{Kravspecifikation}
+
+	
+
 \begin{table}[H]
 	\centering
-	
+	\caption{Kravspecifikationen som projektet skall uppfylla}
+	\label{Krav}
 	\begin{tabular}{ | m{5em} | m{30em}| } 
 		\hline
 		Krav nr 1& Systemet skall minst använda sig av 3 externa knappar och 1 extern spak.   \\ 
@@ -468,7 +478,6 @@ Det fanns många skäl till att använda refaktorering istället för planering.
 		Krav nr 14 & Systemet skall kunna skalas om till rum i olika storlekar. Minsta storlek på rum är 2x2 meter. \\ 
 		\hline
 	\end{tabular}
-	\caption{Kravspecifikationen som projektet skall uppfylla}
 
 \end{table}
 
