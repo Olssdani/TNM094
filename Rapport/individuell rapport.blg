@@ -1,3 +1,7 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: individuell rapport.aux
 The style file: vancouver.bst
 Database file #1: referenser.bib
+`journal' is a missing field, not a string, for entry Scrumguiden
+while executing---line 1865 of file vancouver.bst
+Warning--empty journal in Scrumguiden
+(There was 1 error message)
