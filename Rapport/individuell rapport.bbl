@@ -1,4 +1,15 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{Staging}
+Git. Staging Area;.
+\newblock Hämtad: 208-02-11.
+\newblock Available from: \url{https://git-scm.com/about/staging-area}.
+
+\bibitem{Branch}
+Git. Branching and Merging;.
+\newblock Hämtad: 208-02-11.
+\newblock Available from:
+  \url{https://git-scm.com/about/branching-and-merging}.
 
 \bibitem{Fowler2000rit}
 Fowler M, Beck K, Erich G.
@@ -7,10 +18,43 @@ Fowler M, Beck K, Erich G.
 \newblock Available from:
   \url{https://www.csie.ntu.edu.tw/~r95004/Refactoring_improving_the_design_of_existing_code.pdf}.
 
+\bibitem{Unreal}
+Games E. FREQUENTLY ASKED QUESTIONS (FAQ);.
+\newblock Hämtad: 208-02-12.
+\newblock Available from: \url{https://www.unrealengine.com/en-US/faq}.
+
+\bibitem{Unity}
+Technologies U. Unity 2017: The world-leading creation engine for gaming;.
+\newblock Hämtad: 208-02-12.
+\newblock Available from: \url{https://unity3d.com/unity}.
+
+\bibitem{CryEngine}
+Crytek. CryEngine;.
+\newblock Hämtad: 208-02-12.
+\newblock Available from: \url{https://www.cryengine.com/}.
+
+\bibitem{HeroEngine}
+Simutronics. HeroEngine Pricing;.
+\newblock Hämtad: 208-02-12.
+\newblock Available from:
+  \url{http://www.heroengine.com/heroengine/heroengine-pricing}.
+
 \bibitem{Design}
 Gamma E.
 \newblock Design patterns : elements of reusable object-oriented software.
 \newblock Reading, Mass.: Addison-Wesley; 1995.
+
+\bibitem{SMHI}
+SMHI. SMHI Open Data API Docs - Meteorological Forecasts;.
+\newblock Hämtad: 208-02-11.
+\newblock Available from:
+  \url{http://opendata.smhi.se/apidocs/metfcst/index.html}.
+
+\bibitem{3Dmodel}
+Haan WA. FBX Import;.
+\newblock Hämtad: 208-02-12.
+\newblock Available from:
+  \url{http://docs.cryengine.com/display/CEMANUAL/FBX+Import}.
 
 \bibitem{Sewell2012asd}
 Sewell L.

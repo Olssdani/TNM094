@@ -7,7 +7,8 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Arbetsprocessen d\IeC {\"a}r fokus \IeC {\"a}r p\IeC {\r a} att ha f\IeC {\"a}rdig programvara.\relax }}{8}{figure.caption.8}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Den grova tidsplanen f\IeC {\"o}r projektet.\relax }}{9}{figure.caption.10}
 \addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces De olika stegen i git innan koden skickas till den externa servern. \cite {Staging}.\relax }}{12}{figure.caption.11}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Hur en branch i git fungerar \cite {Branch}.\relax }}{12}{figure.caption.12}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

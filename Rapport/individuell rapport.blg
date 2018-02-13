@@ -1,6 +1,46 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: individuell rapport.aux
 The style file: vancouver.bst
 Database file #1: referenser.bib
+Warning--entry type for "SMHI" isn't style-file defined
+--line 59 of file referenser.bib
+Warning--entry type for "Staging" isn't style-file defined
+--line 67 of file referenser.bib
+Warning--entry type for "Branch" isn't style-file defined
+--line 75 of file referenser.bib
+Warning--entry type for "3Dmodel" isn't style-file defined
+--line 83 of file referenser.bib
+Warning--entry type for "Unity" isn't style-file defined
+--line 90 of file referenser.bib
+Warning--entry type for "CryEngine" isn't style-file defined
+--line 98 of file referenser.bib
+Warning--entry type for "Unreal" isn't style-file defined
+--line 106 of file referenser.bib
+Warning--entry type for "HeroEngine" isn't style-file defined
+--line 114 of file referenser.bib
+Warning--empty author and editor in Staging
+Warning--missing publisher in Staging
+Warning--there's a month but no year in Staging
+Warning--empty author and editor in Branch
+Warning--missing publisher in Branch
+Warning--there's a month but no year in Branch
+Warning--empty author and editor in Unreal
+Warning--missing publisher in Unreal
+Warning--there's a month but no year in Unreal
+Warning--empty author and editor in Unity
+Warning--missing publisher in Unity
+Warning--there's a month but no year in Unity
+Warning--empty author and editor in CryEngine
+Warning--missing publisher in CryEngine
+Warning--there's a month but no year in CryEngine
+Warning--empty author and editor in HeroEngine
+Warning--missing publisher in HeroEngine
+Warning--there's a month but no year in HeroEngine
+Warning--empty author and editor in SMHI
+Warning--missing publisher in SMHI
+Warning--there's a month but no year in SMHI
+Warning--empty author and editor in 3Dmodel
+Warning--missing publisher in 3Dmodel
+Warning--there's a month but no year in 3Dmodel
 `journal' is a missing field, not a string, for entry Scrumguiden
 while executing---line 1865 of file vancouver.bst
 Warning--empty journal in Scrumguiden
